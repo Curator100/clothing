@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <button id="left" class="nav-button">❮</button>
+            <div class="image-container">
+                <img id="current-image" src="images/1.jpg" alt="Clothing Item">
+            </div>
+            <button id="right" class="nav-button">❯</button>
+        </div>
+
+        <!-- Details Section -->
+        <div id="details" class="hidden">
+            <h2 id="item-name"></h2>
+            <p id="item-description"></p>
+            <button id="buy-now">Buy Now</button>
+            <button id="go-back">Go Back</button>
+        </div>
+
+        <!-- Form Modal -->
+        <div id="form-modal" class="modal">
+            <div class="modal-content">
+                <h2>Purchase Item</h2>
+                <form id="purchase-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <button type="submit">Submit</button>
+                    <button type="button" id="close-form">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
